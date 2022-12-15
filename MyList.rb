@@ -17,5 +17,5 @@ class MyList
 end
 
 newList = MyList.new(1, 2, 3, 4)
-newList.any? {|e| e > 5}
+newList.filter {|e| e % 2 == 0}
 

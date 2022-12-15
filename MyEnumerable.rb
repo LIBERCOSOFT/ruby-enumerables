@@ -15,4 +15,14 @@ module MyEnumerable
     }
     print result
   end
+
+  def filter
+    result_array = Array.new
+    each { |e|
+      if yield e
+        result_array.push e
+      end      
+    }
+    print result_array
+  end
 end
