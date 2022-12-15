@@ -1,4 +1,4 @@
-require_relative "MyEnumerable.rb"
+require_relative 'MyEnumerable'
 
 class MyList
   include MyEnumerable
@@ -17,5 +17,4 @@ class MyList
 end
 
 newList = MyList.new(1, 2, 3, 4)
-newList.filter {|e| e % 2 == 0}
-
+newList.filter { |e| e.even? }
