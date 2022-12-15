@@ -1,4 +1,4 @@
-require_relative 'MyEnumerable'
+require_relative "MyEnumerable.rb"
 
 class MyList
   include MyEnumerable
@@ -17,4 +17,5 @@ class MyList
 end
 
 newList = MyList.new(1, 2, 3, 4)
-newList.each { |num| puts num }
+newList.any? {|e| e > 5}
+
