@@ -1,4 +1,4 @@
-require_relative 'MyEnumerable'
+require_relative 'my_enumerable'
 
 class MyList
   include MyEnumerable
@@ -15,6 +15,3 @@ class MyList
     end
   end
 end
-
-newList = MyList.new(1, 2, 3, 4)
-newList.filter { |e| e.even? }
